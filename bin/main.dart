@@ -5,10 +5,10 @@ import 'package:encrypt/encrypt.dart' as encrypt;
 
 void main() {
   // Replace these keys with your own keys in a real-world scenario
-  final key = encrypt.Key.fromUtf8("chakana_pay_1999chakana_pay_1999");
-  final iv = encrypt.IV.fromUtf8("chakana_pay_1999");
+  final key = encrypt.Key.fromUtf8("your_key"); ///32 length
+  final iv = encrypt.IV.fromUtf8("your_key");///16 length
 
-  // File to be encrypted and decrypted
+  // File to be encrypted and decrypted  replace your path
   final inputFile = File('/Users/umidjonshoniyozov/IdeaProjects/lesson/bin/mobilpay.pfx');
   final encryptedFile = File('/Users/umidjonshoniyozov/IdeaProjects/lesson/bin/its_secure.bro');
   final decryptedFile = File('/Users/umidjonshoniyozov/IdeaProjects/lesson/bin/mobilpay1.pfx');
